@@ -1,0 +1,330 @@
+.topscrollbar {
+    background-color: #ffd814;
+    padding: 6px;
+    overflow: hidden;
+
+    /* height: 70%; */
+    /* display: flex; */
+
+}
+
+.topscrolling-content {
+    display: flex;
+    width: max-content;
+    animation: scroll 15s linear infinite;
+
+}
+
+.topscrolling-content span {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 20px;
+}
+
+.school-carousel {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+
+.hero-slide-layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    height: 400px;
+}
+
+
+.hero-side {
+    flex: 0 0 10%;
+    height: 90%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.hero-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Main Image */
+
+.hero-main {
+    flex: 0 0 80%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.hero-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+/* Hover Animation */
+
+.hero-main:hover img {
+    transform: scale(1.06);
+}
+
+.hero-side:hover img {
+    transform: scale(1.12);
+}
+
+/* Image Text */
+
+.hero-caption {
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    color: white;
+    text-shadow: 1px 2px 5px #000;
+}
+
+.hero-caption h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.hero-caption p {
+    font-size: 20px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 767px) {
+
+    .hero-slide-layout {
+        height: 260px;
+        gap: 0;
+    }
+
+    .hero-side {
+        display: none;
+    }
+
+    .hero-main {
+        flex: 0 0 100%;
+        border-radius: 12px;
+    }
+
+    .hero-caption h1 {
+        font-size: 22px;
+    }
+
+    .hero-caption p {
+        font-size: 14px;
+    }
+
+    .hero-caption {
+        left: 5%;
+    }
+}
+/* FOOTER */
+
+.school-footer {
+    background-color: #132b49;
+    color: white;
+    margin-top: 50px;
+}
+
+/* School Logo */
+
+.footer-logo {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffd51c;
+    margin-bottom: 20px;
+}
+
+.footer-logo i {
+    font-size: 25px;
+}
+
+/* Footer Text */
+
+.footer-text {
+    color: #cbd5e1;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* Footer Headings */
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffd51c;
+    margin-bottom: 20px;
+}
+
+
+/* Contact Details */
+
+.footer-contact {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-contact li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    color: #cbd5e1;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.footer-contact i {
+    color: #ffd51c;
+    font-size: 17px;
+}
+
+/* Social Icons */
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #ffd51c;
+    transform: translateY(-4px);
+}
+
+/* Footer Bottom */
+
+.footer-bottom {
+    border-top: 1px solid #52677d;
+    padding: 20px 0;
+    color: #cbd5e1;
+    font-size: 13px;
+}
+
+/* NEW LAUNCH SECTION */
+
+.new-launch-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+/* New Badge */
+
+.new-badge {
+    background-color: #ffd51c;
+    color: #222;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Heading */
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #132b49;
+}
+
+.section-subtitle {
+    color: #777;
+    font-size: 15px;
+}
+
+/* Video Card */
+
+.video-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Card Hover */
+
+.video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Video */
+
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Video Content */
+
+.video-content {
+    padding: 20px;
+}
+
+.video-content h5 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #132b49;
+}
+
+.video-content p {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 0;
+}
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .new-launch-section {
+        padding: 35px 0;
+    }
+
+    .section-title {
+        font-size: 25px;
+    }
+
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 767px) {
+
+    .school-footer {
+        text-align: left;
+    }
+
+    .footer-logo {
+        font-size: 19px;
+    }
+
+}
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
